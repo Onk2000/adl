@@ -1,4 +1,4 @@
-# Aim : Aim: Program to implement regularization to prevent the model from overfitting.
+# Aim: Program to implement regularization to prevent the model from overfitting.
 # Import TensorFlow library 
 import tensorflow as tf
 # Load the data # Load MNIST dataset 
