@@ -111,8 +111,8 @@ import matplotlib.pyplot as plt
 print(tf.config.list_physical_devices('GPU'))
 # Set the GPU device to use 
 device_name = '/device:GPU:0'
-mnist = tf.keras.datasets.mnist(train_images, train_labels), 
-(_, _) = mnist.load_data()
+mnist = tf.keras.datasets.mnist
+(train_images, train_labels), (_, _) = mnist.load_data()
 # Normalize the images to [-1, 1]
 train_images = (train_images.astype('float32') - 127.5) / 127.5
 # Reshape the images to (28, 28, 1) and add a channel dimension 
