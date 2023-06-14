@@ -13,7 +13,7 @@ img_arr = np.expand_dims(img_arr, axis=0)
 img_arr = preprocess_input(img_arr)
 # Predict the objects in the image
 pred = model.predict(img_arr)
-decoded_preds = decode_predictions(preds, top=5)[0]
+decoded_preds = decode_predictions(pred, top=5)[0]
 # Print the predicted objects and their probabilities
 for pred in decoded_preds:
   print(f"{pred[1]}: {pred[2]*100:.2f}%")
